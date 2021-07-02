@@ -1,3 +1,5 @@
 module.exports.post = function(req,res){
-    res.end('<h1>User Posts Section</h1>')
+    return res.render('user',{
+        title:"Posts"
+    })
 }
