@@ -9,7 +9,7 @@ module.exports.profile = function(req, res){
                     user: user
                 })
             }
-            return res.redirect('/user/sign-in')
+            return res.redirect('/users/sign-in')
         })
     }else{
         return res.redirect('/users/sign-in')
@@ -78,7 +78,5 @@ module.exports.createSession = function(req,res){
 
 module.exports.logout = function(req,res){
         res.cookie('user_id', null)
-        return res.render('user_sign_in',{
-            title:"WeCode | Sign In"
-        })
-}
+        return res.redirect('back');
+        }
