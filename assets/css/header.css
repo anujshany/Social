@@ -1,0 +1,76 @@
+body {
+  overflow-x: hidden; }
+
+#layout-header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10; }
+  #layout-header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #2196f3;
+    color: white;
+    height: 30px;
+    box-shadow: 1px 1px 1px 1px lightgrey; }
+    #layout-header nav .mini-logo p {
+      margin: 5px;
+      font-size: 1.4rem;
+      font-weight: bold; }
+    #layout-header nav .auth-links i {
+      display: none; }
+    #layout-header nav .auth-links ul {
+      list-style: none;
+      margin: 8% 5px;
+      display: flex; }
+      #layout-header nav .auth-links ul li {
+        margin-right: 10px; }
+        #layout-header nav .auth-links ul li a {
+          font-size: 1.2rem;
+          font-weight: bold; }
+    #layout-header nav a {
+      color: snow;
+      text-decoration: none; }
+
+@media screen and (max-width: 576px) {
+  #layout-header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10; }
+    #layout-header nav {
+      height: 90px;
+      background: #2196f3;
+      margin: 0;
+      padding: 0; }
+      #layout-header nav .mini-logo {
+        line-height: 70px; }
+        #layout-header nav .mini-logo p {
+          font-size: 2.5rem; }
+      #layout-header nav .auth-links {
+        line-height: 30px; }
+        #layout-header nav .auth-links i {
+          display: block;
+          position: fixed;
+          right: 30px;
+          top: 40px;
+          font-size: 1.5rem; }
+        #layout-header nav .auth-links ul {
+          transition: all; }
+          #layout-header nav .auth-links ul li {
+            margin: 0;
+            padding: 0;
+            border: 2px solid grey;
+            background-color: snow;
+            padding: 0 5px; }
+            #layout-header nav .auth-links ul li a {
+              font-size: 1.1rem;
+              color: black; }
+        #layout-header nav .auth-links ul {
+          display: none; }
+      #layout-header nav .auth-links:hover ul {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        transform: translate(-40px, 40px); } }
