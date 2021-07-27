@@ -14,7 +14,7 @@ module.exports.home = function(req, res){
     //Populate the user of each post
     Post.find({}).populate('user').exec((err,posts)=>{
         return res.render('home',{
-            title:"WeCode | Home",
+            title:"WeConnect | Home",
             posts: posts
         })
     })
