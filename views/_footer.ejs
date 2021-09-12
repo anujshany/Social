@@ -1,22 +1,19 @@
-<div id="layout-footer">
-    <div>
-        <p>
-            &#169; Anuj Shany
-        </p>
-    </div>
 
-    <div>
-        <nav class="footer-nav">
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                 <% if (locals.user){ %>
-                <li>
-                    <a href="/users/profile/<%=u.id%>">Profile</a>
-                </li>
-                <%}%>
-            </ul>
-        </nav>
+
+<footer>
+    
+    <div class="links">
+        <li>
+            <a href="/">Home</a>
+
+        </li>
+        <% if(locals.user){%>
+            <a href="/users/profile/<%=u.id%>">
+                <%=user.name%>
+            </a>
+        <%}%>
+        
+        
     </div>
-    </div>
+   
+</footer>
